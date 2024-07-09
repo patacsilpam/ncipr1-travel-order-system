@@ -2,7 +2,6 @@ import Image from "next/image";
 const HomePage = () => {
   return (
     <main className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 border-[1px] border-slate-200 rounded">
-      <div className="">
         <div className="flex flex-row  items-center bg-[#2B2D37] text-white border-t-2 rounded-t p-1">
           <div>
             <Image src="/logo.png" alt="ncip logo" width={75} height={75} className="p-2"/>
@@ -12,9 +11,10 @@ const HomePage = () => {
             <h1>EMPLOYEE TRAVEL ORDER SYSTEM</h1>
           </div>
         </div>
-       
+        {/*TEXT INPUT*/}
         <div className="flex flex-col justify-center text-center px-10  space-y-7 h-[400px]">
-        <h1 className="text-3xl font-semibold -mt-10">Login</h1>
+          <h1 className="text-3xl font-semibold -mt-10">Login</h1>
+          {/*USERNAME TEXT INPUT*/}
           <label className="input input-bordered flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -26,6 +26,7 @@ const HomePage = () => {
             </svg>
             <input type="text" className="grow" placeholder="Username" />
           </label>
+          {/*PASSWORD TEXT INPUT*/}
           <label className="input input-bordered focus:outline-blue-600 flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +42,6 @@ const HomePage = () => {
           </label>
           <button className="btn btn-outline btn-primary">Sign In</button>
         </div>
-      </div>
     </main>
   );
 };
