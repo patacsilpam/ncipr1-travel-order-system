@@ -1,28 +1,30 @@
-import React from 'react'
-
+import Image from "next/image"
+import Link from "next/link"
+import { CircleGauge } from "lucide-react"
+import { Compass } from "lucide-react"
 const sidebar = () => {
   return (
-    <div>
-        <div className="drawer lg:drawer-open">
-            <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content flex flex-col items-center justify-center">
-                {/* Page content here */}
-                <label htmlFor="my-drawer-2" className=" drawer-button lg:hidden">
-                <div>
-                    Open drawer
-                </div>
-                </label>
-               
-            </div>
-            <div className="drawer-side">
-                <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
-                <ul className="menu text-white  min-h-full w-80 p-4 bg-[#2B2D37]">
-                    {/* Sidebar content here */}
-                    <li><a>Sidebar Item 1</a></li>
-                    <li><a>Sidebar Item 2</a></li>
-                </ul>
-            </div>
-        </div>
+    <div className='h-screen w-fit bg-[#2B2D37] p-2 text-white'>
+      <div className="flex items-center gap-2">
+          <Image src="/logo.png" height={35} width={35} alt="NCIP LOGO"/>
+          <p className=''>TRAVEL ORDER SYSTEM</p>
+      </div>
+      <div>
+        <ul>
+          <li >
+            <Link href="#" className="flex flex-row">
+              <CircleGauge size={28} strokeWidth={2.25} />
+              <span className="hidden lg:flex">Dasdboard</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="#"  className="flex flex-row">
+              <Compass size={28} strokeWidth={2.25} />
+              <span className="hidden lg:flex">Travel Request</span>
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   )
 }
