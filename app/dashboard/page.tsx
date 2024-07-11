@@ -2,9 +2,11 @@ import Sidebar from '@/app/components/headers/sidebar'
 
 const DashboardPage = () => {
   return (
-    <div>
+    <div className='flex flex-row h-full'>
         <Sidebar/>
-       <div className='absolute top-1/2 left-1/2'>asdfasdf</div>
+        <div className='w-full bg-slate-400'>
+          sfdadsdf
+        </div>
     </div>
   )
 }
