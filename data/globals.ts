@@ -1,4 +1,12 @@
-import { CircleGauge, FilePen, Compass, Users, User, Settings, Building2 } from "lucide-react";
+import {
+  CircleGauge,
+  FilePen,
+  Compass,
+  Users,
+  User,
+  Settings,
+  Building2,
+} from "lucide-react";
 
 export const navItems = [
   {
